@@ -11,16 +11,21 @@ npm install react-native-open-im-sdk
 ## Usage
 
 ```js
-import { multiply } from "react-native-open-im-sdk";
+import openIM from "react-native-open-im-sdk";
 
 // ...
 
-const result = await multiply(3, 7);
+openIM.initSDK()
 ```
 
 ## Contributing
 
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
+
+## API
+
+| name | type |
+|----------|----------|
+| initSDK | |
 
 ## License
 

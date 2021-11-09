@@ -17,6 +17,10 @@ const OpenImSdk = NativeModules.OpenImSdk
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return OpenImSdk.multiply(a, b);
+function initSDK(a: number, b: number): Promise<number> {
+  return OpenImSdk.initSDK(a, b);
 }
+
+export default {
+  initSDK,
+};

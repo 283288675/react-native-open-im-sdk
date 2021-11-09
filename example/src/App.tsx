@@ -1,13 +1,13 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-open-im-sdk';
+import openIM from 'react-native-open-im-sdk';
 
 export default function App() {
   const [result, setResult] = React.useState<number | undefined>();
 
   React.useEffect(() => {
-    multiply(3, 7).then(setResult);
+    openIM.initSDK(3, 7).then(setResult);
   }, []);
 
   return (
